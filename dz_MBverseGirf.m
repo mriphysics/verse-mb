@@ -37,10 +37,10 @@ end
 
 if isstruct(girf)
     measured_girf = 1;
-    fprintf('Using a measured GIRF\n');
+    fprintf('Using a structural GIRF\n');
 else
     measured_girf = 0;
-    fprintf('Using a modelled GIRF with tau = %.2f us\n',girf(1)*1e6);
+    fprintf('Using an analytical GIRF with tau = %.2f us\n',girf(1)*1e6);
 end
 rf_init = rf_init(:);
 Gz = Gz(:);
