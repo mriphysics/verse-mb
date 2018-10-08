@@ -26,7 +26,7 @@ applied to a multiband RF pulse.
 As can be seen in the top-left example, such a gradient pulse with fast-oscillating ripples lead to high-frequency 
 components, which are visible in the STFT in the bottom-left. This demanded gradient waveform can be beyond the
 FWHM of a typical GIRF (shown in blue dashed lines).
-<img src="bin/Github_Figures/fig1.png" alt="fig1" width="70%">
+<img src="bin/Github_Figures/fig1.png" alt="fig1" width="100%">
 
 In the right column, we show an equivalent result when we apply VERSE to a single-band RF waveform, which does not contain such high-frequency components
 and is thus "kinder" to the gradient system, and more likely to be reproduced with fidelity.
@@ -45,12 +45,12 @@ two different MRI systems.
 Temporal profiles of RF and Gradient pulses are shown below, as well as the simulated gradient distortion and
 the slice-profile effects due to the GIRF.
 
-<img src="bin/Github_Figures/fig2.png" alt="fig2" width="70%">
+<img src="bin/Github_Figures/fig2.png" alt="fig2" width="100%">
 
 For the **MBv** method (Multiband pulse followed by VERSE) the errors in reproduced gradient are shown to excite ghost slices outside the desired imaging field-of-view.
 This does not happen for the **vMB** method, which is a clear benefit of this approach.
 
-<img src="bin/Github_Figures/fig3.png" alt="fig3" width="50%">
+<img src="bin/Github_Figures/fig3.png" alt="fig3" width="100%">
 
 ## Contact
 
