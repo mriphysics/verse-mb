@@ -2,7 +2,7 @@
 *.JPG
 *.GIF
 *.fig
-*.png
+#*.png
 *.docx
 *.pdn
 *.pdf
