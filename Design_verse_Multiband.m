@@ -12,7 +12,7 @@ close all;
 
 % This code has been released in combination with our publication in MRM,
 % which is released with a CC-BY license.
-% Feel free to modify and spread as long as acknowledgement towards
+% This mean: feel free to modify and spread as long as acknowledgement towards
 % the original authors is made.
 
 % Samy Abo Seada
@@ -92,7 +92,7 @@ fprintf('Designing MBv pulse...\n')
 verse_singleband = 0;
 dt_os = 3;
 
-[rfMBv,gMBv,gMBv_actual]= dz_MBverseGirf(rfmb,Gz,dt,maxg,...
+[rfMBv,gMBv,gMBv_actual]= dz_MBverse(rfmb,Gz,dt,maxg,...
     maxgslew,b1max,verse_singleband,mb,bs*slthick,dt_os,AM_only,girf);
 Nv = length(rfMBv);
 dtv =dt/dt_os;
@@ -109,7 +109,7 @@ dt_os = 2;
 epsilon = 1e-4;
 max_iterations = 1;
 
-[rfvMB,gvMB,gvMB_actual]= dz_MBverseGirf(rf_init,Gz_sb,dt_sb,maxg,...
+[rfvMB,gvMB,gvMB_actual]= dz_MBverse(rf_init,Gz_sb,dt_sb,maxg,...
     maxgslew,b1max,verse_singleband,mb,bs*slthick,dt_os,AM_only,girf);
 Nvmb = length(rfvMB);
 dtvmb =dt_sb/dt_os;

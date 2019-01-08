@@ -1,4 +1,4 @@
-function [ B1_demand,G_demand,G_actual] = dz_MBverseGirf(rf_init,Gz,dt,maxg,maxgslew,b1max,verse_singleband,mb,slicegap,dt_os,AM_only,girf)
+function [ B1_demand,G_demand,G_actual] = dz_MBverse(rf_init,Gz,dt,maxg,maxgslew,b1max,verse_singleband,mb,slicegap,dt_os,AM_only,girf)
 % Designs a Multiband VERSE RF pulse with time-optimal VERSE and
 % incorporate a Gradient Impulse Response Function.
 
